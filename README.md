@@ -1,33 +1,111 @@
-# Fruit-Ninja-Game-with-Computer-Vision-EASY-ONE_-
-This is a fun project made using OpenCV and Computer Vision.
-In this project, the webcam tracks your hand movement and controls the mouse cursor virtually.
+````md
+# 🍉 Fruit Ninja Game using Computer Vision
 
-I have also added comments in the code for better understanding, so beginners can easily learn how everything is working step by step.
+A fun hand-gesture controlled Fruit Ninja style project made using OpenCV and Python.
 
-Currently, the project works when only one finger (index finger) is open and all other fingers are closed. In that gesture, the system starts performing the action like dragging or slicing.
+This project uses Computer Vision to track hand movements through a webcam and control the mouse virtually for slicing fruits in the game.
 
-You can also change this gesture logic according to your own convenience.
-For example:
+---
 
-*Two fingers for click
-*Open palm for pause
-*Thumb + index for drag
-*Different gestures for different actions
+## 🚀 Features
 
-This project is beginner-friendly and a good practice project for learning:
+- Real-time hand tracking
+- Virtual mouse control
+- Gesture-based interaction
+- Smooth cursor movement
+- Beginner-friendly code
+- Easy to customize gestures
 
-*OpenCV
-*Hand Tracking
-*Computer Vision
-*Gesture Control
-*Python Automation
+---
 
-Tech Used:
+## 🖐️ Gesture Logic
 
-*Python
-*OpenCV
-*cvzone
-*pyautogui
-*numpy
-*mouse library
-*mediapipe
+The project currently works when:
+
+✅ Only the index finger is open  
+❌ All other fingers are closed
+
+When this gesture is detected, the system starts performing actions like dragging or slicing.
+
+You can also change the gesture logic according to your own convenience.
+
+Example:
+- Two fingers → Click
+- Open palm → Pause
+- Thumb + index → Drag mode
+
+---
+
+## 🛠️ Technologies Used
+
+- Python
+- OpenCV
+- cvzone
+- NumPy
+- pyautogui
+- mouse library
+
+---
+
+## 📦 Installation
+
+Install required libraries:
+
+```bash
+pip install opencv-python
+pip install cvzone
+pip install pyautogui
+pip install mouse
+pip install numpy
+````
+
+---
+
+## ▶️ Run the Project
+
+```bash
+python main.py
+```
+
+---
+
+## 🎮 Controls
+
+| Gesture              | Action       |
+| -------------------- | ------------ |
+| Index Finger Move    | Move Cursor  |
+| Only Index Finger Up | Drag / Slice |
+| Press Q              | Exit Program |
+
+---
+
+## 📷 Demo
+
+Add screenshots or GIFs here.
+
+Example:
+
+```md
+![Demo](demo.gif)
+```
+
+---
+
+## 📚 Learning Outcome
+
+This project is helpful for learning:
+
+* Computer Vision
+* Hand Tracking
+* Gesture Recognition
+* OpenCV
+* Python Automation
+
+---
+
+## ❤️ Author
+
+Made with Python and OpenCV by Ayush Gairola
+
+```
+```
