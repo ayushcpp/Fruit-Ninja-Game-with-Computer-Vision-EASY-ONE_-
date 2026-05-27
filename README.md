@@ -66,7 +66,7 @@ python main.py
 
 ---
 
-## 📚 Learning Outcome
+##  Learning Outcome
 
 This project is helpful for learning:
 
@@ -78,9 +78,6 @@ This project is helpful for learning:
 
 ---
 
-## ❤️ Author
+##  Author
 
 Made with Python and OpenCV by Ayush Gairola
-
-```
-```
