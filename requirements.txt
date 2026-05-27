@@ -1,0 +1,6 @@
+opencv-python # For Windows 
+cvzone==1.6.1
+mouse
+numpy==1.23.5
+mediapipe==0.10.5
+pyautogui
