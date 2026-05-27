@@ -44,21 +44,6 @@ Example:
 - NumPy
 - pyautogui
 - mouse library
-
----
-
-## 📦 Installation
-
-Install required libraries:
-
-```bash
-pip install opencv-python
-pip install cvzone
-pip install pyautogui
-pip install mouse
-pip install numpy
-````
-
 ---
 
 ## ▶️ Run the Project
@@ -78,16 +63,6 @@ python main.py
 | Press Q              | Exit Program |
 
 ---
-
-## 📷 Demo
-
-Add screenshots or GIFs here.
-
-Example:
-
-```md
-![Demo](demo.gif)
-```
 
 ---
 
