@@ -1,83 +1,58 @@
-````md
-# 🍉 Fruit Ninja Game using Computer Vision
+# Fruit Ninja with Hand Tracking
 
-A fun hand-gesture controlled Fruit Ninja style project made using OpenCV and Python.
+Play Fruit Ninja with your index finger instead of a mouse.
 
-This project uses Computer Vision to track hand movements through a webcam and control the mouse virtually for slicing fruits in the game.
+![Python](https://img.shields.io/badge/python-3.8--3.11-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
----
+The script reads your webcam, tracks your hand with MediaPipe (via cvzone), and moves the system mouse to follow your index fingertip. Raise only your index finger to press the mouse button and slice; lower it or open your hand to let go.
 
-## 🚀 Features
+> **Note:** This repo is the controller, not the game. You need a Fruit Ninja game (or any slicing game played with the mouse) running on your computer.
 
-- Real-time hand tracking
-- Virtual mouse control
-- Gesture-based interaction
-- Smooth cursor movement
-- Beginner-friendly code
-- Easy to customize gestures
+## Requirements
 
----
+- Python 3.8 – 3.11 (the pinned `mediapipe` and `numpy` versions don't support newer Python)
+- A webcam
+- A Fruit Ninja game installed on your PC, or a browser version
 
-## 🖐️ Gesture Logic
-
-The project currently works when:
-
-✅ Only the index finger is open  
-❌ All other fingers are closed
-
-When this gesture is detected, the system starts performing actions like dragging or slicing.
-
-You can also change the gesture logic according to your own convenience.
-
-Example:
-- Two fingers → Click
-- Open palm → Pause
-- Thumb + index → Drag mode
-
----
-
-## 🛠️ Technologies Used
-
-- Python
-- OpenCV
-- cvzone
-- NumPy
-- pyautogui
-- mouse library
----
-
-## ▶️ Run the Project
+## Installation
 
 ```bash
-python main.py
+git clone https://github.com/ayushcpp/Fruit-Ninja-Game-with-Computer-Vision-EASY-ONE_-.git
+cd Fruit-Ninja-Game-with-Computer-Vision-EASY-ONE_-
+
+python -m venv venv
+venv\Scripts\activate          # Windows
+# source venv/bin/activate     # macOS / Linux
+
+pip install -r requirements.txt
 ```
 
----
+## How to Play
 
-## 🎮 Controls
+1. **Start the game.** Open Fruit Ninja and leave it on screen.
+2. **Run the controller:**
+   ```bash
+   python fruit_ninja.py
+   ```
+3. A webcam preview window opens. Keep your hand inside the **purple box**. That box maps to your whole screen.
+4. Switch to the game window and slice with your finger.
 
-| Gesture              | Action       |
-| -------------------- | ------------ |
-| Index Finger Move    | Move Cursor  |
-| Only Index Finger Up | Drag / Slice |
-| Press Q              | Exit Program |
+## Controls
 
----
+| Gesture | Action |
+| --- | --- |
+| Move index finger | Move cursor |
+| Only index finger up | Hold click (slice) |
+| Any other hand pose | Release click |
+| `q` (in the preview window) | Quit |
 
----
+## Notes
 
-##  Learning Outcome
+- Built for Windows. On Linux, the `mouse` library needs root (`sudo`).
+- Good lighting and a plain background make tracking more reliable.
+- To change the gesture, edit the `only_index_up` check in `fruit_ninja.py`.
 
-This project is helpful for learning:
+## License
 
-* Computer Vision
-* Hand Tracking
-* Gesture Recognition
-* OpenCV
-* Python Automation
-
----
-
-##  Author
-
-Made with Python and OpenCV by Ayush Gairola
+[MIT](LICENSE)
